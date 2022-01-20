@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra chẵn lẻ</title>
+</head>
+<body>
+<h1> Nhập số</h1>
+<input type="text" name="nhập số" id="inputnumber">
+<input type="button" name="button" value="kiểm tra" onclick="checker()">
+</body>
+<script>
+    function checker(){
+        let a=document.getElementById('inputnumber').value
+        let x=parseInt(a)
+        if ( x % 2===0){
+            alert(x +' là số chẵn')
+        } else {
+            alert(x +' là số lẻ')
+        }
+    }
+
+
+
+</script>
+</html>
